@@ -13,10 +13,10 @@ on:
         - SF1200
         - SFT1200
       sourcecode:
-        description: 'https://github.com/xiaorouji/openwrt-passwall.git'     
+        description: 'Source code URL'     
         required: true
       pkgname:
-        description: 'passwall'  
+        description: 'Openwrt package name'  
         required: true
       email:
         description: 'Git accuont email address'  
@@ -44,7 +44,6 @@ jobs:
         cd $GITHUB_WORKSPACE
         chmod +x ./build.sh
         ./build.sh
-
     - uses: actions/upload-artifact@v2
       with:
         name: ${{ github.event.inputs.pkgname }}_related_ipks
