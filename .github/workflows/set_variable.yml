@@ -13,10 +13,10 @@ on:
         - SF1200
         - SFT1200
       sourcecode:
-        description: 'Source code URL'     
+        description: 'https://github.com/xiaorouji/openwrt-passwall.git'     
         required: true
       pkgname:
-        description: 'Openwrt package name'  
+        description: 'passwall'  
         required: true
       email:
         description: 'Git accuont email address'  
